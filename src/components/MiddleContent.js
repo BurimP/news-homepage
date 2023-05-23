@@ -1,19 +1,17 @@
 import React from "react";
-// import BigImage from "../../assets/images/image-web-3-desktop.jpg";
+import BigImage from "../assets/images/image-web-3-desktop.jpg";
 
 const MiddleContent = () => {
   return (
     <div className="middle-content">
       <div className="left-content">
         <div className="left-top-content">
-          <img alt="" src="" className="main-img" />
+          <img alt="" src={BigImage} className="main-img" />
         </div>
         <div className="left-bottom-content">
-          <div className="lbc-div-paragraph">
-            <p className="lbc-paragraph">
-              The Bright<br></br> Future of<br></br> Web 3.0?
-            </p>
-          </div>
+          <p className="lbc-paragraph">
+            The Bright <br></br>Future of<br></br> Web 3.0?
+          </p>
           <div className="lbc-div-content">
             <p className="lbc-small-paragraph">
               We dive into the next evolution of the web that<br></br> claims to
@@ -26,16 +24,18 @@ const MiddleContent = () => {
       </div>
       <div className="right-content">
         <div className="shrink">
-          <h1 className="new">New</h1>
+          <h1 className="rc-new">New</h1>
           <p className="rc-firstP">Hydrogen VS Electric Cars</p>
           <p className="rc-secondP">
             Will hydrogen-fueled cars ever catch up to EVs?
           </p>
+          <hr className="straight-line"></hr>
           <p className="rc-thirdP">The Downsides of AI Artistry</p>
           <p className="rc-fourthP">
             What are the possible adverse effects of on-demand AI image
             generation?
           </p>
+          <hr className="straight-line"></hr>
           <p className="rc-fifthP">Is VC Funding Drying Up?</p>
           <p className="rc-sixthP">
             Private funding by VC firms is down 50% YOY. We take a look at what
