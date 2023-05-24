@@ -259,3 +259,18 @@ body {
     font-size: 8px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 8px;
+  }
+
+  .header-tags {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: block;
+    background-color: darkblue;
+  }
+}
