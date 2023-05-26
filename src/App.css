@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
 * {
   margin: 0;
@@ -45,6 +47,7 @@ body {
 
 .w {
   font-size: 4rem;
+  font-family: "DM Serif Display", serif;
 }
 .header-tags {
   width: 50%;
@@ -53,6 +56,27 @@ body {
   align-items: center;
   text-align: center;
   opacity: 50%;
+}
+
+.home:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.new:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.popular:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.trending:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.categories:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
 }
 
 /* ======Middle Content====== */
@@ -125,6 +149,11 @@ body {
   border: none;
 }
 
+.btn:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
 /* =========Middle Right=========== */
 
 .right-content {
@@ -165,6 +194,19 @@ body {
 .rc-fifthP {
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.rc-firstP:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+.rc-thirdP:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+.rc-fifthP:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
 }
 
 .rc-secondP,
@@ -208,6 +250,11 @@ body {
 .fb-title {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.fb-title:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
 }
 
 .firstText {
@@ -260,9 +307,15 @@ body {
   }
 }
 
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 7px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   html {
-    font-size: 8px;
+    font-size: 16px;
   }
 
   .header-tags {
@@ -272,5 +325,92 @@ body {
   .dropdown-menu {
     display: block;
     background-color: darkblue;
+  }
+
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;*/
+    width: 100%;
+  }
+
+  /* .left-top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  } */
+
+  .left-bottom-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;
+    max-height: 100%;
+    margin-top: 2rem; */
+  }
+
+  .lbc-small-paragraph {
+    margin-top: 1rem;
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .right-content {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pc-img {
+    height: 12rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+    object-fit: contain;
+  }
+
+  .first-box,
+  .second-box,
+  .third-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .fb-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .firstText {
+    margin-right: 0rem;
+  }
+  .secondText {
+    margin-right: 0rem;
   }
 }
