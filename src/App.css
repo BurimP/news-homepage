@@ -282,28 +282,40 @@ body {
   html {
     font-size: 14px;
   }
+  .test {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1105px) {
   html {
     font-size: 12px;
   }
+  .test {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 939px) {
+/* @media screen and (max-width: 939px) {
   html {
     font-size: 12px;
   }
-}
+} */
 
 @media screen and (max-width: 940px) {
   html {
     font-size: 10px;
   }
+  .test {
+    display: none;
+  }
 }
 @media screen and (max-width: 805px) {
   html {
     font-size: 8px;
+  }
+  .test {
+    display: none;
   }
 }
 
@@ -311,20 +323,26 @@ body {
   html {
     font-size: 7px;
   }
+  .test {
+    display: none;
+  }
 
   .btn {
     font-size: 1.2rem;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   html {
     font-size: 16px;
   }
 
-  .dropdown-menu {
-    position: relative;
-    display: inline-block;
+  .test {
+    display: block;
+  }
+
+  .header-tags {
+    display: none;
   }
 
   .big-menu {
@@ -341,19 +359,17 @@ body {
 
   .big-X {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     height: 10%;
-    /* background-color: green; */
   }
   .x {
     margin-right: 1.5rem;
     margin-top: 1rem;
     color: black;
-    font-size: 3.3rem;
+    font-size: 2.5rem;
   }
 
   .big-items {
-    /* background-color: yellow; */
     height: 60%;
     color: black;
     display: flex;
@@ -361,11 +377,10 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-left: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .big-items-container {
-    /* background-color: orange; */
     height: 60%;
     width: 100%;
     display: flex;

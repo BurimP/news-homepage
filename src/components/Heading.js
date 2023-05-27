@@ -17,7 +17,7 @@ const Heading = () => {
   useEffect(() => {
     const handleResize = () => {
       console.log("Window width:", window.innerWidth);
-      setIsMobile(window.innerWidth <= 375);
+      setIsMobile(window.innerWidth <= 376);
     };
 
     // Check on initial component mount
@@ -38,16 +38,7 @@ const Heading = () => {
         <div className="dropdown">
           <img alt="" src={Icon} onClick={handleToggleDropdown} />
 
-          {isDropdownOpen && (
-            // <div className="dropdown-menu">
-            //   <h3 className="dropdown-item">Home</h3>
-            //   <h3 className="dropdown-item">New</h3>
-            //   <h3 className="dropdown-item">Popular</h3>
-            //   <h3 className="dropdown-item">Trending</h3>
-            //   <h3 className="dropdown-item">Categories</h3>
-            // </div>
-            <BigMenu onClick={handleToggleClose} />
-          )}
+          {isDropdownOpen && <BigMenu onClick={handleToggleClose} />}
         </div>
       ) : (
         <div className="header-tags">
